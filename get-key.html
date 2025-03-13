@@ -14,6 +14,9 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="get-key.html">Get Key</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,7 +27,7 @@
         <p id="keyDisplay"></p>
     </div>
     <footer>
-        <!-- ...existing code... -->
+        <p>&copy; 2025 SkeleTool by colxinn. Discord: Dietcherrycodeine_</p>
     </footer>
     <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
     <script>
@@ -34,7 +37,7 @@
         document.getElementById('getKeyButton').addEventListener('click', async () => {
             try {
                 const ip = await getUserIP();
-                const linkvertiseUrl = `https://linkvertise.com/api/v1/redirect/linkvertise-id?url=https://your-redirect-url.com?ip=${ip}`;
+                const linkvertiseUrl = `https://link-to.net/1316481/${ip}?o=sharing`;
                 window.location.href = linkvertiseUrl;
             } catch (error) {
                 console.error('Error redirecting to Linkvertise:', error);
@@ -50,7 +53,7 @@
 
         async function generateKey(ip) {
             try {
-                const response = await fetch('https://api.linkvertise.com/api/v1/your-endpoint', {
+                const response = await fetch('https://juicy-veil-coriander.glitch.me/generate-key', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -60,8 +63,8 @@
                 const data = await response.json();
                 document.getElementById('keyDisplay').innerText = `Your key: ${data.key}`;
             } catch (error) {
-                console.error('Error fetching key:', error);
-                document.getElementById('keyDisplay').innerText = 'Error fetching key. Please try again later.';
+                console.error('Error generating key:', error);
+                document.getElementById('keyDisplay').innerText = 'Error generating key. Please try again later.';
             }
         }
 
