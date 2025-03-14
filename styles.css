@@ -10,7 +10,7 @@ body {
   width: 80%;
   margin: 20px auto; /* Add some margin for spacing */
   padding: 20px;
-  border: 1px solid #d3d3d3; /* Lighter border color */
+  border: 1px solid #2c3e50; /* Match footer background color */
   background-color: #b0c3d2; /* White background for container */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
@@ -29,25 +29,27 @@ header h1 {
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   text-align: center;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 15px; /* Increase margin */
+  display: inline-block;
+  margin-right: 10px;
 }
 
 nav ul li a {
+  display: block;
   color: #2c2884; /* White text color */
-  text-decoration:underline;
-  padding: 5px 10px; /* Add padding */
+  background-color: #e0e4cc; /* Complementary color */
+  text-decoration: none;
+  padding: 10px; /* Add padding */
   border-radius: 5px; /* Rounded corners */
 }
 
 nav ul li a:hover {
-  background-color: #1a252f; /* Darker blue on hover */
+  background-color: #f0f0f0; /* Darker blue on hover */
 }
 
 footer {
@@ -58,7 +60,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #2c3e50;
+  border-top: 1px solid #2c3e50; /* Match footer background color */
 }
 
 .dropdown {
@@ -114,6 +116,6 @@ button:hover {
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 20px;
-  border: 1px solid #d3d3d3; /* Lighter border color */
+  border: 1px solid #2c3e50; /* Match footer background color */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
