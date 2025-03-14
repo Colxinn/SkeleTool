@@ -1,35 +1,119 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - SkeleTool</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>SkeleTool</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="get-key.html">Get Key</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="container content">
-      <h2>Welcome to SkeleTool</h2>
-      <p>SkeleTool is a Discord selfbot designed with the user in mind. Created by colxinn, SkeleTool offers a variety of features to enhance your Discord experience.</p>
-      <p>Explore our features and see how SkeleTool can help you automate and enhance your interactions on Discord.</p>
-    </div>
-    <footer>
-      <p>© 2025 SkeleTool by colxinn. Discord: Dietcherrycodeine_</p>
-    </footer>
-  </body>
-</html>
+body {
+  background-color: #f0f0f0; /* Light grey background for better readability */
+  color: #2c3e50; /* Darker text color for better contrast */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto; /* Add some margin for spacing */
+  padding: 20px;
+  border: 1px solid #d3d3d3; /* Lighter border color */
+  background-color: #b0c3d2; /* White background for container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+header {
+  background-color: #2c3e50; /* Dark blue background for header */
+  color: #151515; /* White text color */
+  padding: 20px 0; /* Increase padding */
+  border-bottom: 1px solid #2c3e50;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em; /* Increase font size */
+  color: #2c3e50
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px; /* Increase margin */
+}
+
+nav ul li a {
+  color: #2c2884; /* White text color */
+  text-decoration:underline;
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+  background-color: #1a252f; /* Darker blue on hover */
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0; /* Increase padding */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #2c3e50;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff; /* White background for dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2c3e50; /* Darker text color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #e0e0e0; /* Light grey background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.content, .about-content {
+  color: #2c3e50 !important; /* Darker text color */
+  padding: 20px 0;
+}
+
+.testimonial {
+  background-color: #ffffff; /* White background */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3; /* Lighter border color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
